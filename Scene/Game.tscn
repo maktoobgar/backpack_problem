@@ -1,0 +1,433 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://Asset/‌BackPack.png" type="Texture" id=1]
+[ext_resource path="res://Script/MainCode.gd" type="Script" id=2]
+[ext_resource path="res://Scene/Pop.tscn" type="PackedScene" id=3]
+
+[sub_resource type="DynamicFontData" id=25]
+font_path = "res://Fonts/noto_sans_ui_bold.ttf"
+
+[sub_resource type="DynamicFont" id=26]
+size = 25
+font_data = SubResource( 25 )
+
+[sub_resource type="DynamicFontData" id=27]
+font_path = "res://Fonts/noto_sans_ui_bold.ttf"
+
+[sub_resource type="DynamicFont" id=28]
+size = 25
+font_data = SubResource( 27 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://Fonts/noto_sans_ui_bold.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 25
+font_data = SubResource( 5 )
+
+[sub_resource type="DynamicFontData" id=7]
+font_path = "res://Fonts/noto_sans_ui_bold.ttf"
+
+[sub_resource type="DynamicFont" id=8]
+size = 19
+font_data = SubResource( 7 )
+
+[sub_resource type="DynamicFontData" id=9]
+font_path = "res://Fonts/noto_sans_ui_bold.ttf"
+
+[sub_resource type="DynamicFont" id=10]
+size = 19
+font_data = SubResource( 9 )
+
+[sub_resource type="DynamicFontData" id=11]
+font_path = "res://Fonts/noto_sans_ui_bold.ttf"
+
+[sub_resource type="DynamicFont" id=12]
+size = 20
+font_data = SubResource( 11 )
+
+[sub_resource type="DynamicFontData" id=13]
+font_path = "res://Fonts/noto_sans_ui_bold.ttf"
+
+[sub_resource type="DynamicFont" id=14]
+size = 20
+font_data = SubResource( 13 )
+
+[sub_resource type="DynamicFontData" id=15]
+font_path = "res://Fonts/noto_sans_ui_bold.ttf"
+
+[sub_resource type="DynamicFont" id=16]
+size = 20
+font_data = SubResource( 15 )
+
+[sub_resource type="DynamicFontData" id=17]
+font_path = "res://Fonts/noto_sans_ui_bold.ttf"
+
+[sub_resource type="DynamicFont" id=18]
+size = 20
+font_data = SubResource( 17 )
+
+[sub_resource type="DynamicFontData" id=19]
+font_path = "res://Fonts/noto_sans_ui_regular.ttf"
+
+[sub_resource type="DynamicFont" id=20]
+size = 15
+font_data = SubResource( 19 )
+
+[sub_resource type="DynamicFontData" id=21]
+font_path = "res://Fonts/noto_sans_ui_bold.ttf"
+
+[sub_resource type="DynamicFont" id=22]
+size = 25
+font_data = SubResource( 21 )
+
+[sub_resource type="DynamicFontData" id=23]
+font_path = "res://Fonts/noto_sans_ui_bold.ttf"
+
+[sub_resource type="DynamicFont" id=24]
+size = 19
+font_data = SubResource( 23 )
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Popup_NotePath = NodePath("Pop")
+Value_Weight_NotePath = NodePath("Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/VSplitContainer/HSplitContainer/HBoxContainer2/VW_TextEdit")
+Items_NotePath = NodePath("Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/VSplitContainer/HSplitContainer/HBoxContainer/Items_TextEdit")
+BackPack_NotePath = NodePath("Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel2/HBoxContainer/BackPack_TextEdit")
+
+[node name="Pop" parent="." instance=ExtResource( 3 )]
+
+[node name="Main_Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Main_Margin_Panel" type="Panel" parent="Main_Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Main_Panel/Main_Margin_Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+split_offset = 2
+collapsed = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Main_Panel/Main_Margin_Panel/HSplitContainer"]
+margin_right = 624.0
+margin_bottom = 704.0
+size_flags_horizontal = 3
+columns = 3
+
+[node name="Button3" type="VBoxContainer" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/GridContainer"]
+margin_right = 205.0
+margin_bottom = 704.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label5" type="Label" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/GridContainer/Button3"]
+margin_top = 157.0
+margin_right = 205.0
+margin_bottom = 192.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+custom_fonts/font = SubResource( 26 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Label6" type="Label" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/GridContainer/Button3"]
+margin_top = 511.0
+margin_right = 205.0
+margin_bottom = 546.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+custom_fonts/font = SubResource( 26 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Button" type="VBoxContainer" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/GridContainer"]
+margin_left = 209.0
+margin_right = 414.0
+margin_bottom = 704.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label7" type="Label" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/GridContainer/Button"]
+margin_top = 157.0
+margin_right = 205.0
+margin_bottom = 192.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+custom_fonts/font = SubResource( 26 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Label8" type="Label" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/GridContainer/Button"]
+margin_top = 511.0
+margin_right = 205.0
+margin_bottom = 546.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+custom_fonts/font = SubResource( 26 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Button2" type="VBoxContainer" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/GridContainer"]
+margin_left = 418.0
+margin_right = 623.0
+margin_bottom = 704.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label9" type="Label" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/GridContainer/Button2"]
+margin_top = 157.0
+margin_right = 205.0
+margin_bottom = 192.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+custom_fonts/font = SubResource( 26 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Label10" type="Label" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/GridContainer/Button2"]
+margin_top = 511.0
+margin_right = 205.0
+margin_bottom = 546.0
+size_flags_horizontal = 3
+size_flags_vertical = 6
+custom_fonts/font = SubResource( 26 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="VSplitContainer" type="VSplitContainer" parent="Main_Panel/Main_Margin_Panel/HSplitContainer"]
+margin_left = 636.0
+margin_right = 1260.0
+margin_bottom = 704.0
+size_flags_horizontal = 3
+split_offset = 2
+collapsed = true
+
+[node name="VSplitContainer" type="VSplitContainer" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer"]
+margin_right = 624.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 0, 200 )
+collapsed = true
+
+[node name="Label" type="Label" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/VSplitContainer"]
+margin_right = 624.0
+margin_bottom = 153.0
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 28 )
+text = " Maximum number of Backpack size and  item
+ sizes are set to 30. Soo... just there is a limit
+ because \"Itemlist\" can't show more than 30
+ columns."
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/VSplitContainer"]
+margin_top = 165.0
+margin_right = 624.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 0, 35 )
+split_offset = 2
+collapsed = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/VSplitContainer/HSplitContainer"]
+margin_right = 306.0
+margin_bottom = 35.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/VSplitContainer/HSplitContainer/HBoxContainer"]
+margin_right = 201.0
+margin_bottom = 35.0
+custom_fonts/font = SubResource( 6 )
+text = "Items Size (int): "
+
+[node name="Items_TextEdit" type="TextEdit" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/VSplitContainer/HSplitContainer/HBoxContainer"]
+margin_left = 205.0
+margin_right = 306.0
+margin_bottom = 35.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 8 )
+text = "0"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/VSplitContainer/HSplitContainer"]
+margin_left = 318.0
+margin_right = 624.0
+margin_bottom = 35.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/VSplitContainer/HSplitContainer/HBoxContainer2"]
+margin_right = 149.0
+margin_bottom = 35.0
+custom_fonts/font = SubResource( 6 )
+text = "Value (int) : "
+
+[node name="VW_TextEdit" type="TextEdit" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/VSplitContainer/HSplitContainer/HBoxContainer2"]
+margin_left = 153.0
+margin_right = 306.0
+margin_bottom = 35.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 10 )
+text = "0"
+caret_blink = true
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer"]
+margin_top = 212.0
+margin_right = 624.0
+margin_bottom = 704.0
+size_flags_vertical = 3
+split_offset = 2
+collapsed = true
+
+[node name="Panel" type="GridContainer" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer"]
+margin_right = 200.0
+margin_bottom = 492.0
+rect_min_size = Vector2( 200, 0 )
+
+[node name="Start_Button" type="Button" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel"]
+margin_right = 200.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 12 )
+text = "Start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Values_Button" type="Button" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel"]
+margin_top = 54.0
+margin_right = 200.0
+margin_bottom = 104.0
+rect_min_size = Vector2( 0, 50 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 14 )
+text = "Values"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Weights_Button" type="Button" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel"]
+margin_top = 108.0
+margin_right = 200.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 0, 50 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 16 )
+text = "Weights"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Clear_Button" type="Button" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel"]
+margin_top = 162.0
+margin_right = 200.0
+margin_bottom = 212.0
+rect_min_size = Vector2( 0, 50 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 18 )
+text = "Clear"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exit_Button" type="Button" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel"]
+margin_top = 216.0
+margin_right = 200.0
+margin_bottom = 266.0
+rect_min_size = Vector2( 0, 50 )
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 18 )
+text = "Exit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel"]
+margin_top = 270.0
+margin_right = 200.0
+margin_bottom = 492.0
+custom_fonts/font = SubResource( 20 )
+text = "This is easy to work with.
+1) Choose Backpack size.
+2) Choose Item size.
+3) Click on values button.
+4) Type values.
+5) Click on Weight button.
+6) Type weights.
+7) Start the algorithm
+8) Here the answer is..."
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="VSplitContainer" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer"]
+margin_left = 212.0
+margin_right = 624.0
+margin_bottom = 492.0
+size_flags_horizontal = 3
+split_offset = 2
+collapsed = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel2"]
+margin_right = 412.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 0, 25 )
+
+[node name="Label" type="Label" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel2/HBoxContainer"]
+margin_right = 256.0
+margin_bottom = 35.0
+custom_fonts/font = SubResource( 22 )
+text = "Backpack Size (int):  "
+
+[node name="BackPack_TextEdit" type="TextEdit" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel2/HBoxContainer"]
+margin_left = 260.0
+margin_right = 412.0
+margin_bottom = 35.0
+size_flags_horizontal = 3
+custom_fonts/font = SubResource( 24 )
+text = "0"
+
+[node name="Panel" type="Panel" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel2"]
+margin_top = 47.0
+margin_right = 412.0
+margin_bottom = 492.0
+
+[node name="TextureRect" type="TextureRect" parent="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel2/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_up" from="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel/Start_Button" to="." method="_on_Start_Button_button_up"]
+[connection signal="button_up" from="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel/Clear_Button" to="." method="_on_Clear_Button_button_up"]
+[connection signal="button_up" from="Main_Panel/Main_Margin_Panel/HSplitContainer/VSplitContainer/HSplitContainer/Panel/Exit_Button" to="." method="_on_Exit_Button_button_up"]
