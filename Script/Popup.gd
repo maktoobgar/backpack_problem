@@ -15,7 +15,6 @@ func _ready():
 	Description_TextEdit = get_node(Description_NodePath)
 
 func show_me(type):
-	print("here")
 	if type == Global.MessageType.Error:
 		Title_Label.text = "Error:"
 		Info_Label.text = "Inserted numbers in textbox\'s are not valid."
