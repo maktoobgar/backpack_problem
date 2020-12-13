@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="DynamicFontData" id=23]
+font_path = "res://Fonts/noto_sans_ui_bold.ttf"
+
+[sub_resource type="DynamicFont" id=24]
+size = 20
+font_data = SubResource( 23 )
+
+[node name="Label" type="Label"]
+margin_right = 26.0
+margin_bottom = 638.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_fonts/font = SubResource( 24 )
+text = "0"
+align = 1
+valign = 1
